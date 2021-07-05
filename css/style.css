@@ -176,7 +176,7 @@ button.btn-link {
 }
 
 .darkgreytext {
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
 
 .darkbluetext {
@@ -203,6 +203,14 @@ button.btn-link {
 
 .sr-only:hover {
   color: #212529;
+}
+
+.footer-ahref {
+  color: #009177;
+}
+
+.footer-ahref:hover {
+  color: #007b9c;
 }
 
 /*
