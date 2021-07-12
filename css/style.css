@@ -40,9 +40,13 @@ body {
     padding: 5px;
   }
 
-  .brand_image_mod {
-    width: 60px;
+  .comment {
+    text-align: center;
   }
+
+  /* .brand_image_mod {
+    width: 60px;
+  } */
   .brand_title_mod {
     font-size: 2rem;
   }
@@ -98,9 +102,9 @@ body {
     padding: 5px;
     font-size: 13px;
   }
-  .brand_image_mod {
+  /* .brand_image_mod {
     width: 40px;
-  }
+  } */
   .brand_title_mod {
     font-size: 1.8rem;
   }
@@ -257,3 +261,22 @@ Colors
   width: 100%;
   height: auto;
 } */
+
+.btn-outline-success {
+  background-color: #f5f4f4;
+  color: #009177;
+  border: 1px solid #009177;
+}
+
+.btn-outline-success:hover {
+  background-image: linear-gradient(
+    to right top,
+    #283c86,
+    #005fa3,
+    #007b9c,
+    #009177,
+    #45a247
+  );
+  color: #ffffff;
+  border: 1px solid #f5f4f4;
+}
