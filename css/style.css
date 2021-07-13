@@ -280,3 +280,15 @@ Colors
   color: #ffffff;
   border: 1px solid #f5f4f4;
 }
+
+.cardhover:hover {
+  background-color: #dcf9d7;
+}
+
+/* .cardhover:focus {
+  background-color: #dcf9d7;
+} */
+
+.nav-item:hover {
+  background-color: #e0e0e0;
+}
