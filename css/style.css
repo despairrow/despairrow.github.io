@@ -13,6 +13,31 @@ body {
   }
 }
 
+@media (max-device-width: 550px) {
+  .mobile_mod {
+    display: none;
+  }
+
+  .header_fix {
+    width: 80%;
+    text-align: center;
+  }
+
+  .toggle_fix {
+    width: 20%;
+  }
+
+  .number_fix {
+    width: 50%;
+    text-align: center;
+  }
+
+  .button_fix {
+    width: 50%;
+    text-align: center;
+  }
+}
+
 @media (max-device-width: 480px) {
   .text_mod {
     text-align: center;
