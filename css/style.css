@@ -49,8 +49,8 @@ body {
     text-indent: 0px;
     font-size: 1rem;
   }
-  .cost_text_mod {
-    font-size: 1.2rem;
+  p.mob-p-size {
+    font-size: 1rem;
   }
   .title_text_mod {
     font-size: 32px;
@@ -81,6 +81,24 @@ body {
   .section_mod {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .mob-text-center {
+    text-align: center;
+  }
+
+  .mob-button-center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mob-section-padding-fix {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .mob-section-width-fix {
+    width: 90%;
   }
 }
 
@@ -147,8 +165,14 @@ section {
 
 .checkImage {
   width: 40px;
-  padding-right: 10px;
-  text-align: left;
+  /* padding-right: 10px; */
+  /* display: block;
+  margin: 0 auto; */
+  float: right;
+}
+
+.checkImageDiv {
+  padding: 0px;
 }
 
 .checklist {
@@ -210,6 +234,58 @@ button.btn-link {
 
 .darkbluetext {
   color: #211f30;
+}
+
+.gradienttext {
+  background: linear-gradient(
+    to right top,
+    #283c86,
+    #005fa3,
+    #007b9c,
+    #009177,
+    #45a247
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p-mod {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+a.spoiler1,
+a.spoiler2 {
+  display: block;
+  margin: 0 auto;
+}
+
+a.spoiler1:hover {
+  background-color: #e9a764;
+}
+
+a.spoiler2:hover {
+  background-color: lightgray;
+}
+
+.sevice-item {
+  text-align: left;
+  background-color: #dcf9d7;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.howtogetservicecard {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.howtogetservicetext {
+  padding: 0 10px;
 }
 
 .form-group {
@@ -314,6 +390,6 @@ Colors
   background-color: #dcf9d7;
 } */
 
-.nav-item:hover {
+li.nav-item:hover {
   background-color: #e0e0e0;
 }
