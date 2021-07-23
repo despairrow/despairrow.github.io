@@ -1,5 +1,5 @@
 <!-- Use this token to access the HTTP API:
-1184085906:AAHubicbXR_mZsrNa_P5yqsysKp_lLUuwD0
+1946333414:AAHD1ZWWcNCBa7Z1ZpG_YphYSn5Ie5cbAjc
 Keep your token secure and store it safely, it can be used by anyone to control your bot. -->
 
 <?php
@@ -41,10 +41,10 @@ if(isset($_POST['user_message']) && !empty($_POST['user_message'])){
 // $message = $_POST['user_message'];
 
 //в переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "1184085906:AAHubicbXR_mZsrNa_P5yqsysKp_lLUuwD0";
+$token = "1946333414:AAHD1ZWWcNCBa7Z1ZpG_YphYSn5Ie5cbAjc";
 
 //нужна вставить chat id (Как получить chat id, читайте выше)
-$chat_id = "-408500882";
+$chat_id = "-559253938";
 
 if (isset($name) && !empty($name) && isset($phone) && !empty($phone) && isset($address) && !empty($address) && isset($message) && !empty($message)) {
 
