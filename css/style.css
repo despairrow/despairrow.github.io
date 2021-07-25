@@ -5,159 +5,6 @@ body {
 	font-size: 90%;
 }*/
 
-/* ---------------------------------МЕДИА ЗАПРОСЫ (НАЧАЛО)------------------------------------ */
-
-@media (max-device-width: 768px) {
-  .mobile_mod {
-    display: none;
-  }
-}
-
-@media (max-device-width: 550px) {
-  .mobile_mod {
-    display: none;
-  }
-
-  .header_fix {
-    width: 80%;
-    text-align: center;
-  }
-
-  .toggle_fix {
-    width: 20%;
-  }
-
-  .number_fix {
-    width: 50%;
-    text-align: center;
-  }
-
-  .button_fix {
-    width: 50%;
-    text-align: center;
-  }
-}
-
-@media (max-device-width: 480px) {
-  .text_mod {
-    text-align: center;
-    text-indent: 0px;
-    font-size: 1rem;
-  }
-  .text_mod1 {
-    text-align: center;
-    text-indent: 0px;
-    font-size: 1rem;
-  }
-  p.mob-p-size {
-    font-size: 1rem;
-  }
-  .title_text_mod {
-    font-size: 32px;
-  }
-  .description_text_mod {
-    font-size: 20px;
-  }
-  .carousel_prev {
-    padding: 5px;
-  }
-  .carousel_next {
-    padding: 5px;
-  }
-
-  .comment {
-    text-align: center;
-  }
-
-  /* .brand_image_mod {
-    width: 60px;
-  } */
-  .brand_title_mod {
-    font-size: 2rem;
-  }
-  .brand_text_mod {
-    font-size: 0.8rem;
-  }
-  .section_mod {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .mob-text-center {
-    text-align: center;
-  }
-
-  .mob-button-center {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .mob-section-padding-fix {
-    padding-top: 0px;
-    padding-bottom: 10px;
-  }
-
-  .mob-section-width-fix {
-    width: 90%;
-  }
-}
-
-@media (max-device-width: 917px) {
-  .title_text_mod {
-    margin-top: 10px;
-  }
-}
-
-@media (min-device-width: 480px) {
-  .text_mod {
-    text-align: justify;
-    text-indent: 40px;
-  }
-  .text_mod1 {
-    text-align: justify;
-    text-indent: 40px;
-  }
-  .title_text_mod {
-    font-size: 50px;
-  }
-}
-
-@media (max-device-width: 1080px) and (min-device-width: 768px) {
-  .mobile_font-size {
-    font-size: 18px;
-  }
-}
-
-@media (max-device-width: 372px) {
-  .navbar-toggler {
-    padding: 5px;
-  }
-}
-
-@media (max-device-width: 360px) {
-  /* .brand_size {
-    font-size: 20px;
-  } */
-  .mobile_font-size {
-    font-size: 13px;
-  }
-  .btn {
-    padding: 5px;
-    font-size: 13px;
-  }
-  /* .brand_image_mod {
-    width: 40px;
-  } */
-  .brand_title_mod {
-    font-size: 1.8rem;
-  }
-  .brand_text_mod {
-    font-size: 0.7rem;
-  }
-}
-
-/* ---------------------------------МЕДИА ЗАПРОСЫ (КОНЕЦ)------------------------------------ */
-
 section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -393,3 +240,174 @@ Colors
 li.nav-item:hover {
   background-color: #e0e0e0;
 }
+
+.privacypolicy_content {
+  margin: 20px;
+}
+
+.privacypolicy_span {
+  font-size: 2rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+/* ---------------------------------МЕДИА ЗАПРОСЫ (НАЧАЛО)------------------------------------ */
+
+@media (max-device-width: 768px) {
+  .mobile_mod {
+    display: none;
+  }
+}
+
+@media (max-device-width: 550px) {
+  .mobile_mod {
+    display: none;
+  }
+
+  .header_fix {
+    width: 80%;
+    text-align: center;
+  }
+
+  .toggle_fix {
+    width: 20%;
+  }
+
+  .number_fix {
+    width: 50%;
+    text-align: center;
+  }
+
+  .button_fix {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-device-width: 480px) {
+  .text_mod {
+    text-align: center;
+    text-indent: 0px;
+    font-size: 1rem;
+  }
+  .text_mod1 {
+    text-align: center;
+    text-indent: 0px;
+    font-size: 1rem;
+  }
+  p.mob-p-size {
+    font-size: 1rem;
+  }
+  .title_text_mod {
+    font-size: 32px;
+  }
+  .description_text_mod {
+    font-size: 20px;
+  }
+  .carousel_prev {
+    padding: 5px;
+  }
+  .carousel_next {
+    padding: 5px;
+  }
+
+  .comment {
+    text-align: center;
+  }
+
+  /* .brand_image_mod {
+    width: 60px;
+  } */
+  .brand_title_mod {
+    font-size: 2rem;
+  }
+  .brand_text_mod {
+    font-size: 0.8rem;
+  }
+  .section_mod {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .mob-text-center {
+    text-align: center;
+  }
+
+  .privacypolicy_content {
+    margin: 0px;
+  }
+
+  .privacypolicy_span {
+    font-size: 1.4rem;
+  }
+
+  .mob-button-center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mob-section-padding-fix {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .mob-section-width-fix {
+    width: 90%;
+  }
+}
+
+@media (max-device-width: 917px) {
+  .title_text_mod {
+    margin-top: 10px;
+  }
+}
+
+@media (min-device-width: 480px) {
+  .text_mod {
+    text-align: justify;
+    text-indent: 40px;
+  }
+  .text_mod1 {
+    text-align: justify;
+    text-indent: 40px;
+  }
+  .title_text_mod {
+    font-size: 50px;
+  }
+}
+
+@media (max-device-width: 1080px) and (min-device-width: 768px) {
+  .mobile_font-size {
+    font-size: 18px;
+  }
+}
+
+@media (max-device-width: 372px) {
+  .navbar-toggler {
+    padding: 5px;
+  }
+}
+
+@media (max-device-width: 360px) {
+  /* .brand_size {
+    font-size: 20px;
+  } */
+  .mobile_font-size {
+    font-size: 13px;
+  }
+  .btn {
+    padding: 5px;
+    font-size: 13px;
+  }
+  /* .brand_image_mod {
+    width: 40px;
+  } */
+  .brand_title_mod {
+    font-size: 1.8rem;
+  }
+  .brand_text_mod {
+    font-size: 0.7rem;
+  }
+}
+
+/* ---------------------------------МЕДИА ЗАПРОСЫ (КОНЕЦ)------------------------------------ */
