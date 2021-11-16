@@ -55,11 +55,11 @@ button.btn-link {
 }
 
 .nav-link > h6 {
-  color: #2f2f2f;
+  color: #ffffff;
 }
-/* .nav-link > h6:hover {
-  border-bottom: 3px solid #228800;
-} */
+.nav-link > h6:hover {
+  /* border-bottom: 3px solid #228800; */
+}
 
 .answer {
   font-size: 1rem;
@@ -238,8 +238,22 @@ Colors
   background-color: #dcf9d7;
 } */
 
+li.nav-item {
+  padding-bottom: 3px;
+}
+
 li.nav-item:hover {
-  background-color: #e0e0e0;
+  padding-bottom: 0px;
+  border-bottom: 3px solid #228800;
+  border-image: linear-gradient(
+    to right,
+    #283c86,
+    #005fa3,
+    #007b9c,
+    #009177,
+    #45a247
+  );
+  border-image-slice: 1;
 }
 
 .privacypolicy_content {
