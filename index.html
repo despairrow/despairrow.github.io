@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>4 seasons tech</title>
+	<title>4 Seasons Tech</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
@@ -12,26 +12,17 @@
 </head>
 <body>
 
-	<!-- ------------------------------Хедер 1------------------------------ -->
+										<!-- Хедер 1 -->
 
 	<header>
-			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f5f4f4; background-image: linear-gradient(to right top, #000000, #111212, #000000); border-bottom: 4px solid black; border-image: linear-gradient(to right, #283c86, #005fa3, #007b9c, #009177, #45a247);
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #f5f4f4; background-image:url(img/texture.png); background-attachment: local; background-size: cover; border-bottom: 4px solid black; border-image: linear-gradient(to right, #283c86, #005fa3, #007b9c, #009177, #45a247);
 			border-image-slice: 1;">
 			  <div class="container-xl">
 			  	
 
 			  	
 			    	<a class="navbar-brand header_fix" href="index.html">
-						<img src="img/4ss-white.webp" width="200px" alt="4 seasons tech" class="brand_image_mod">
-			    		<!-- <div class="row">
-			    			<div class="col">
-			    				<img src="img/4ss(negative).png" width="200px" alt="" class="brand_image_mod">
-			    			</div>
-			    			<div class="col">
-			    				<h3 style="color: #2F2F2F;" class="brand_title_mod">Название</h3>
-			    				<h6 style="color: #2F2F2F;" class="brand_text_mod">Слоган или краткое описание направления деятельности в Днепре</h6>
-			    			</div>
-			    		</div> -->
+						<img src="img/4ss-white.webp" width="200px" alt="4 seasons tech" class="brand_image_mod" />
 			    	</a>
 			  	
 
@@ -42,15 +33,31 @@
 					</div>
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto mb-2 mb-lg-0" >
+						<ul class="navbar-nav mr-auto mb-2 mb-lg-0 center" >
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="#aboutus"><h6 class="font-weight-bold">О нас</h6></a>
+								<a class="nav-link" aria-current="page" href="#aboutus"><h6>О нас</h6></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#gallery"><h6 class="font-weight-bold">Наши работы</h6></a>
+								<a class="nav-link" href="#howitworks"><h6>Как мы работаем</h6></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  <h6>Наши работы</h6>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								  <a class="dropdown-item disabled" href="#">Квартира на Рогалёва</a>
+								  <a class="dropdown-item disabled" href="#">Квартира на Жуковского</a>
+								  <a class="dropdown-item disabled" href="#">Нефтэк</a>
+								</div>
+							  </li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://4seasons.tech/service/index.html"><h6>Сервис</h6></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="https://4seasons.tech/service/index.html"><h6 class="font-weight-bold">Сервис</h6></a>
+								<a class="nav-link disabled" href="#"><h6>Документы</h6></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contacts"><h6>Контакты</h6></a>
 							</li>
 						</ul>
 					  </div>
@@ -71,7 +78,7 @@
 	</header>
 
 
-	<!-- ------------------------------Окно формы заявки------------------------------ -->
+										<!-- Окно формы заявки -->
 
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -107,7 +114,7 @@
 	</div>
 
 
-	<!-- ------------------------------Первый экран------------------------------ -->
+										<!-- Первый экран -->
 
 	<!-- <section class="container-fluid" style="padding-bottom: 0px; padding-top: 0px; box-shadow: 0 0 10px rgba(0,0,0,0.5); background-image: url(img/about_washingmachines.webp); background-color: #211F30; background-repeat: no-repeat; background-attachment: local; background-size: 100%;"> -->
 
@@ -123,7 +130,7 @@
 
 		<div class="fullscreen-bg">
 			<div class="overlay">
-				<h1>Вентиляция - Кондиционирование - Отопление</h1>
+				<h1><span class="gradienttext">Вентиляция<br>Кондиционирование<br>Отопление</span></h1>
 			</div>
 			<video loop="" muted="" autoplay="" poster="video/video.jpg" class="fullscreen-bg__video">
 				<source src="img/video.mp4" type="video/mp4">
@@ -132,751 +139,69 @@
 		</div>
 
 
-		<section style="background-color: #111212; background-image: linear-gradient(to right top, #000000, #111212, #000000); background-attachment: local; background-size: auto 100%;" class="greytext">
+		<!-- <section style="background-color: #111212; background-image: linear-gradient(to right top, #000000, #111212, #000000); background-attachment: local; background-size: auto 100%;" class="greytext"> -->
+		<section style="background-color: #111212; background-image: url(img/texture.png); background-attachment: local; background-size: cover; border-top: 4px solid black; border-image: linear-gradient(to right, #283c86, #005fa3, #007b9c, #009177, #45a247); border-image-slice: 1;"  class="greytext">
 			<a href="#" name="aboutus"></a>
-			<div class="container-xl w-75">
+			<div class="container-xl" style="width:90%;">
 				<h2 align="center">О нас</h2><br>
 				<h5 class="font-weight-light text_mod">Специалисты ЧП «Клименко» уже около 20 лет предоставляют качественные услуги по монтажу, ремонту, гарантийному и послегарантийному обслуживанию систем вентиляции, кондиционирования и отопления.</h5>
 				<h5 class="font-weight-light text_mod">Предприятие выполняет работы любой сложности, предлагая своим клиентам наиболее выгодные комплексные решения по проектированию, изготовлению, монтажу, пусконаладке и паспортизации систем кондиционирования, вентиляции, воздушного отопления, тепловых насосов в промышленных помещениях, квартирах, кафе, салонах красоты, гостиницах, ресторанах, спортивных залах, ночных клубах, магазинах, складских и офисных помещениях.</h5>
 				<h5 class="font-weight-light text_mod">Благодаря гарантии качества выполненных работ и прозрачности расчёта стоимости услуг, мы успешно сотрудничаем со многими строительными компаниями, проектными и дизайнерскими агентствами, прорабами, подрядчиками, а также частными организациями и физическими лицами.</h5>
-				<h5 class="font-weight-light text_mod">Мы всегда идём на встречу нашим клиентам, предлагая наиболее выгодные условия сотрудничества (включающие, порой, в себя скидки на оборудование, материалы и произведённые работы), которые оговариваются в индивидуальном порядке.</h5>
+				<h5 class="font-weight-light text_mod">Мы всегда идём на встречу нашим клиентам, предлагая наиболее выгодные условия сотрудничества (включающие в себя скидки на оборудование, материалы и произведённые работы), которые оговариваются в индивидуальном порядке.</h5>
 			</div>
 		</section>
 
-		<!-- КАРУСЕЛЬ -->
-	<section>
-	
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
-			</div>
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<img src="img/ex/ex1.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex2.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex3.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex4.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex5.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex6.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex7.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex8.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex9.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex10.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex11.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex12.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex13.webp" class="d-block w-100" alt="Пример">
-			  </div>
-			  <div class="carousel-item">
-				<img src="img/ex/ex14.webp" class="d-block w-100" alt="Пример">
-			  </div>
-	
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Предыдущий</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Следующий</span>
-			</button>
-		  </div>
-	
-		</section>
-		<!--  -->
+								<!-- Как мы работаем -->
 
-		<!-- ---------------------------------------------------------------- -->
-	<!-- <section class="container-fluid" style="padding-bottom: 0px; padding-top: 0px; box-shadow: 0 0 10px rgba(0,0,0,0.5); background-color: #007b9c; background-image: linear-gradient(to right top, #283c86, #005fa3, #007b9c, #009177, #45a247); background-attachment: local; background-size: auto 100%;">
-		
+	<section style="background-color: #007b9c; background-image: url(img/inverted_texture.png); background-attachment: local; background-size: cover;" class="section_mod">
+		<a href="#" name="howitworks"></a>
 		<div class="container-xl">
-			<div class="row align-items-center">
-		    	<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
-		    		<div class="mx-auto d-block">
-		    			<h1 class="w-100 font-weight-bold text-center title_text_mod" style="color:#ffffff; margin-bottom: 0px; opacity: 0.8; padding: 10px;">Чистка и ремонт кондиционеров</h1>
-		    			<h2 style="color: white; opacity: 0.8;" class="font-weight-normal text-center description_text_mod padding: 10px;">Оперативность, качество, адекватные цены!</h2><br>
-		    			<h4 style="color: white; background-color: #35273e; padding: 10px; opacity: 0.8;" class="font-weight-light text-center description_text_mod">*более 20 лет на рынке услуг и сотни довольных клиентов!</h4>
-		    		</div>
+			<h2 align="center" class="darkgraytext" style="padding-bottom: 30px;">Как мы работаем</h2>
+			<div class="row">
+		    	<div class="col-md-3 col-xs-12 text-center">
+					<div class="howtogetservicecard">
+		    			<!-- <img src="img/fluent1.webp" alt="4 seasons tech" width="100px"><br><br> -->
+		    			<span style="font-size: 7rem; font-weight: 700; opacity: 0.2;">I</span>
+						<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Встреча с клиентом, выявление потребностей и пожеланий, с учётом технических 	характеристик объекта и бюджета. При необходимости, разработка технической документации.
+						</p>
+					</div>
 		    	</div>
-		    	<div class="col-lg-4 col-md-5 col-md-offset-0 col-sm-12 col-sm-offset-2 col-xs-12" style="background-color: #32384D; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-		    		<div class="row" style="padding: 20px;">
-						   <h4 style="color: white;">Свяжитесь с нами</h4>
-						   <form action="./form.php" method="post">
-								<div class="form-group">
-								   <label for="name" style="color: white;" class="form-label">Ваше имя:</label>
-								   <input type="name" name="user_name" class="form-control" id="name" placeholder="" data-toggle="tooltip" data-placement="left" title="Введите Ваше имя" required>
-								</div>
-								<div class="form-group">
-								   <label for="phone" style="color: white;" class="form-label">Номер телефона:</label>
-								   <input type="phone" name="user_phone" class="form-control" id="phone" placeholder="" pattern="[0-9]{10,}" data-toggle="tooltip" data-placement="left" title="Введите Ваш номер без разделительных знаков. К примеру: 0961112233" required>
-								</div>
-								<div class="form-group">
-								   <label for="address" style="color: white;" class="form-label">Местоположение:</label>
-								   <input type="text" name="user_address" class="form-control" id="address" placeholder="" data-toggle="tooltip" data-placement="left" title="Укажите Ваш адрес" required>
-								</div>
-								<div class="form-group">
-								   <label for="message" style="color: white;" class="form-label">Описание проблемы:</label>
-								   <textarea class="form-control" name="user_message" rows="4" id="message" placeholder="" data-toggle="tooltip" data-placement="left" title="Вкратце опишите проблему. Напишите марку, модель и возраст Вашей техники" required></textarea>
-								</div><br>
-								   <button type="submit" class="btn btn-outline-success w-100" id="submit">Перезвоните мне</button>
-							</form>
-						</div>
+		    	<div class="col-md-3 col-xs-12 text-center">
+					<div class="howtogetservicecard">
+		    			<!-- <img src="img/fluent2.webp" alt="4 seasons tech" width="100px"><br><br> -->
+		    			<span style="font-size: 7rem; font-weight: 700; opacity: 0.2;">II</span>
+						<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Подбор оптимального по характеристикам оборудования, удовлетворяещего всем требованиям данного проекта. Подписание всех необходимых для реализации проекта документов.
+						</p>
+					</div>
+		    	</div>
+		    	<div class="col-md-3 col-xs-12 text-center">
+					<div class="howtogetservicecard">
+		    			<!-- <img src="img/fluent3.webp" alt="4 seasons tech" width="100px"><br><br> -->
+						<span style="font-size: 7rem; font-weight: 700; opacity: 0.2;">III</span>
+		    			<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Доставка, монтаж и пусконаладка оборудования и инженерных систем в согласованное в договоре время.
+						</p>
+					</div>
+		    	</div>
+		    	<div class="col-md-3 col-xs-12 text-center">
+					<div class="howtogetservicecard">
+		    			<!-- <img src="img/fluent4.webp" alt="4 seasons tech" width="100px"><br><br> -->
+		    			<span style="font-size: 7rem; font-weight: 700; opacity: 0.2;">IV</span>
+						<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Сопровождение эксплуатации инженерных систем. Гарантийне и постгарантийное обсулживание.
+						</p>
 					</div>
 		    	</div>
 		  	</div>
 		</div>
-	</section> -->
-
-	<!-- ------------------------------Проблемы (Зачем это клиенту?)------------------------------ -->
-
-	<!-- <section style="background-color: #f5f4f4; box-shadow: 0 0 10px rgba(0,0,0,0.5);" class="section_mod">
-		<a href="#" name="aboutus"></a>
-		<div class="container-xl">
-			<h2 align="center" class="darkgreytext" style="padding-bottom: 30px;">Что случится, если своевременно не чистить кондиционер?</h2>
-			
-			<div class="row">
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/odor.webp" alt="4 seasons tech" width="250px"><br><br>
-		    		<h5 class="darkgreytext">Появление неприятного запаха</h5>
-		    		<p align=center class="darkgreytext">Вследствие загрязнения фильтров и турбины внутреннего блока.</p>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/alergic.webp" alt="4 seasons tech" width="250px"><br><br>
-		    		<h5 class="darkgreytext">Обострение аллергических реакций</h5>
-		    		<p align=center class="darkgreytext">Вследствие загрязнения фильтров внутреннего блока пылью, пыльцой, плесенью и другими аллергенами.</p>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/flowing.webp" alt="4 seasons tech" width="250px"><br><br>
-		    		<h5 class="darkgreytext">Течь внутреннего<br> блока</h5>
-		    		<p align=center class="darkgreytext">Вследствие загрязнения трубки дренажной системы и загрязнения испарителя внутреннего блока пылью.</p>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/notheat.webp" alt="4 seasons tech" width="250px"><br><br>
-		    		<h5 class="darkgreytext">Снижение эффективности охлаждения</h5>
-		    		<p align=center class="darkgreytext">Вследствие недостатка фреона в системе, загрязнения вентилятора внутреннего блока, неисправности электроники или компрессора.</p>
-		    	</div>
-		  	</div>
-			  <p align="center">...и множество других неприятностей. Если не чистить кондиционер вовремя, то эффективность его работы начнёт снижаться, потребление электроэнергии увеличиваться, а срок эксплуатации уменьшаться вплоть до полного выхода кондиционера из строя, не говоря уже о том, что его использование будет нести угрозу вашему здоровью!</p>
-			  
-		</div>
-	</section> -->
-
-	<!-- -----------------------Преимущества (Почему мы? Наши решение проблемы)------------------------ -->
-
-	<!-- <section style="background-color: #007b9c; background-image: linear-gradient(to right top, #283c86, #005fa3, #007b9c, #009177, #45a247); background-attachment: local; background-size: auto 100%;" class="section_mod">
-		<a href="#" name="gallery"></a>
-		<div class="container-xl">
-			<h2 align="center" class="whitetext" style="padding-bottom: 30px;">Почему мы подходим для этого как никто другой?</h2>
-			<div class="row">
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/a1.webp" alt="4 seasons tech" width="100px"><br><br>
-		    		<h5 class="whitetext">Оперативность</h5>
-		    		<p align=center class="greytext">Мы всегда готовы оказать Вам квалифицированную помощь в кратчайшие сроки, даже в самый разгар сезона.</p>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/a2.webp" alt="4 seasons tech" width="100px"><br><br>
-		    		<h5 class="whitetext">Адекватные цены<br>и прозрачный расчёт стоимости услуг</h5>
-		    		<p align=center class="greytext">Мы всегда готовы предложить решения возникшей проблемы отталкиваясь от Вашего бюджета так, чтобы Вы чётко понимали за что платите.
-					</p>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/a31.webp" alt="4 seasons tech" width="100px"><br><br>
-		    		<h5 class="whitetext">Гарантия качества выполненных работ</h5>
-		    		<p align=center class="greytext">Работу выполняют опытные мастера, использующие профессиональное оборудование и предоставляющие гарантию на выполненную ими работу.</p>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center" style="padding-bottom: 20px">
-		    		<img src="img/a4.webp" alt="4 seasons tech" width="100px"><br><br>
-		    		<h5 class="whitetext">Полный спектр услуг</h5>
-		    		<p align=center class="greytext">Мы выполняем все виды монтажа, ремонта и обслуживания систем вентиляции и кондиционирования, работая как с физическими так и с юридическими лицами по всем формам оплаты.</p>
-		    	</div>
-		  	</div>
-		</div>
-	</section> -->
-
-	<!-- ------------------------------Перечень выполняемых работ------------------------------ -->
-
-	<!-- <section style="box-shadow: 0 0 10px rgba(0,0,0,0.5);" class="section_mod">
-		<div class="container-xl mob-section-width-fix">
-			<h2 align="center" style="padding-bottom: 30px;">При необходимости ремонта, выполняем работы любой сложности:</h2>
-			<div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <ul class="list-unstyled">
-                    	<li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">замену компрессора;</p>
-								</div>
-							</div>
-						</li>
-                    	<li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">замену пускового конденсатора;</p>
-								</div>
-							</div>
-						</li>
-                    	<li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">ремонт электронных плат управления;</p>
-								</div>
-							</div>
-						</li>
-                        <li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">ремонт или замена пульта управления;</p>
-								</div>
-							</div>
-						</li>
-                        <li class="checklist"><p class="p-mod">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">ремонт жалюзи внутреннего блока;</p>
-								</div>
-							</div>
-						</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <ul class="list-unstyled">
-                    	<li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">устранение посторонних шумов;</p>
-								</div>
-							</div>
-						</li>
-                        <li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">заправку фреоном;</p>
-								</div>
-							</div>
-						</li>
-                        <li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">обнаружение и устранение утечек фреона;</p>
-								</div>
-							</div>
-						</li>
-                        <li class="checklist">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">ремонт после скачков напряжения в сети;</p>
-								</div>
-							</div>
-						</li>
-                        <li class="checklist"><p class="p-mod">
-							<div class="row">
-								<div class="col-2 checkImageDiv">
-									<img src="img/cb2.webp" class="checkImage">
-								</div>
-								<div class="col-10">
-									<p class="p-mod">и другие.</p>
-								</div>
-							</div>
-						</li>
-                    </ul>
-                </div>
-            </div>
-            
-		</div>
-	</section> -->
-
-	<!-- -------------------------------Варианты предоставления услуг (Пакеты)------------------ -->
-	<!-- <section style="background-color: #007b9c; background-image: linear-gradient(to right top, #283c86, #005fa3, #007b9c, #009177, #45a247); background-attachment: local; background-size: auto 100%;">
-		<a href="#" name="services"></a>
-		<div class="container-xl">
-			<h2 align="center" class="whitetext">Пакеты предоставляемых услуг</h2><br>
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-		    	<div class="col">
-					<div class="card mx-auto d-block" style="width: 18rem; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-					  <center><img src="img/bronzef.webp" class="card-img-top" alt="4 seasons tech" style="width:70%;"></center>
-					  <div class="card-body" style="padding-top: 0px;">
-					    <center><h5 class="card-title">Минимальный</h5></center><br>
-					    <p class="card-text">
-							<p class="sevice-item">+ Чистка или промывка внутреннего блока (фильтра, турбины и испарителя);</p>
-							<p class="sevice-item">+ Продувка и промывка наружного блока (конденсатора и вентилятора) от грязи, пыли и пуха;</p>
-							
-							<hr>
-
-							<p class="sevice-item" style="background-color:mistyrose;">Диагностика систем кондиционера (проверка давления фреона в системе, электроники, датчиков температуры) В ПОДАРОК!</p>
-							<p class="sevice-item" style="background-color:powderblue;">СКИДКА на дозаправку кондиционера фреоном 50%<br>
-							100 г фреона = 60 гривен (вместо 120)!</p><br>
-							<center><span class="gradienttext" style="font-size: 2.4rem; font-weight: 600;">699 гривен</span></center>
-						</p>
-						<center><div class="button_fix">
-							<button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
-						</div></center>
-					  </div>
-					</div>			
-		    	</div>
-		    	<div class="col">
-					<div class="card mx-auto d-block" style="width: 18rem; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-						<center><img src="img/silverf.webp" class="card-img-top" alt="4 seasons tech" style="width:70%;"></center>
-					  <div class="card-body" style="padding-top: 0px;">
-					    <center><h5 class="card-title">Оптимальный</h5></center><br>
-					    <p class="card-text">
-							Включает в себя услуги пакета<br><a href="#spoiler-1" data-toggle="collapse" class="btn spoiler1">"Минимальный"</a>
-							<div class="collapse" id="spoiler-1">
-								<div>
-									<p>
-										<p class="sevice-item" style="background-color: #e9a764;">+ Чистка или промывка внутреннего блока (фильтра, турбины и испарителя);</p>
-										<p class="sevice-item" style="background-color: #e9a764;">+ Продувка и промывка наружного блока (конденсатора и вентилятора) от грязи, пыли и пуха;</p>
-									</p>
-									<hr>
-								</div>
-							</div>
-
-							<p class="sevice-item">+ Обработка испарителя и фильтров внутреннего блока противогрибковым и противомикробным составом или паром;</p>
-							<p class="sevice-item">+ Диагностика состояния дренажной системы и кронштейнов наружного блока;</p>
-							
-							<hr>
-
-							<p class="sevice-item" style="background-color:mistyrose;">Диагностика систем кондиционера (проверка давления фреона в системе, электроники, датчиков температуры) В ПОДАРОК!</p>
-							<p class="sevice-item" style="background-color:powderblue;">СКИДКА на дозаправку кондиционера фреоном 50%<br>
-							100 г фреона = 60 гривен (вместо 120)!</p><br>
-							<center><span class="gradienttext" style="font-size: 2.4rem; font-weight: 600;">899 гривен</span></center>
-						</p>
-						<center><div class="button_fix">
-							<button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
-						</div></center>
-					  </div>
-					</div>			
-		    	</div>
-		    	<div class="col">
-					<div class="card mx-auto d-block" style="width: 18rem; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-						<center><img src="img/goldf.webp" class="card-img-top" alt="4 seasons tech" style="width:70%;"></center>
-					  <div class="card-body" style="padding-top: 0px;">
-					    <center><h5 class="card-title">Премиум</h5></center><br>
-					    <p class="card-text">
-							Включает в себя услуги пакета<br><a href="#spoiler-2" data-toggle="collapse" class="btn spoiler2">"Оптимальный"</a>
-							<div class="collapse" id="spoiler-2">
-								<div>
-									<p>
-										<p class="sevice-item" style="background-color: #e9a764;">+ Чистка или промывка внутреннего блока (фильтра, турбины и испарителя);</p>
-										<p class="sevice-item" style="background-color: #e9a764;">+ Продувка и промывка наружного блока (конденсатора и вентилятора) от грязи, пыли и пуха;</p>
-										<p class="sevice-item" style="background-color: lightgray;">+ Обработка испарителя и фильтров внутреннего блока противогрибковым и противомикробным составом или паром;</p>
-										<p class="sevice-item" style="background-color: lightgray;">+ Диагностика состояния дренажной системы и кронштейнов наружного блока;</p>
-									</p>
-									<hr>
-								</div>
-							</div>
-
-							<p class="sevice-item">+ Полная разборка внутреннего и наружного блоков для устранения загрязнений из труднодоступных мест;</p>
-							<p class="sevice-item">+ Обработка средством, предотвращающим образование налёта грязи и слизи, дренажной системы кондиционера;</p>
-
-							<hr>
-
-							<p class="sevice-item" style="background-color:mistyrose;">Диагностика систем кондиционера (проверка давления фреона в системе, электроники, датчиков температуры) В ПОДАРОК!</p>
-							<p class="sevice-item" style="background-color:powderblue;">СКИДКА на дозаправку кондиционера фреоном 50%<br>
-							100 г фреона = 60 гривен (вместо 120)!</p><br>
-							<center><span class="gradienttext" style="font-size: 2.4rem; font-weight: 600;">1199 гривен</span></center>
-						</p>
-						<center><div class="button_fix">
-							<button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
-						</div></center>
-					  </div>
-					</div>			
-		    	</div>
-		  	</div>
-			
-		</div>
-	</section> -->
+	</section>
 
 
-	<!-- <section style="background-color: #f5f4f4; box-shadow: 0 0 10px rgba(0,0,0,0.5);" class="section_mod">
-		<a href="#" name=""></a>
-		<div class="container-xl">
-			
-			<p align="center" class="p-mod mob-p-size darkgreytext">* вызов мастера и диагностика в пределах города оплачиваются только в случае отказа от чистки или ремонта и их стоимость составляет 200 гривен. В случае вызова мастера в пригород (Подгородное, Кировское, Новоалександровка, Кодаки, Авиаторское, Любимовка и Александровка), вызов и диагностика оплачиваются не зависимо от решения о чистке или ремонте, а их стоимость оговаривается с мастером предварительно по телефону и зависит от удалённости населённого пункта.</p>
-			  
-		</div>
-	</section> -->
+									<!-- Карусель -->
 
-
-<!-- Статичная секция примера восстановления на компонентном уровне -->
-
-	<!-- <section>
-		<div class="container-xl w-75">
-			<h2 align="center">Восстановление на компонентном уровне</h2><br>
-			<h5 class="font-weight-normal text_mod">Нашей отличительной чертой является услуга восстановления Вашей техники на компонентном уровне. В то время, как другие службы не заморачиваясь предложат Вам заменить сломавшийся компонент на другой, с неизвестной историей, или дорогостоящий новый, наши мастера предложат Вам осуществить ремонт вашего компонента (там где это возможно), тем самым сохранив Ваш бюджет.</h5><br>
-			<div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <img src="img/plata.jpg" alt="" class="w-100"><br><br>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <h5>К примеру:</h5><br>
-                    <h5 class="font-weight-normal text_mod1">При незначительных повреждениях электронной платы управления в стиральных машинах, типа перегорания предохранителя, наши мастера с лёгкостью восстановят её и это выйдет Вам значительно дешевле, чем замена всего модуля на новый.</h5><br>
-                    <h5 class="font-weight-normal text_mod1">Стоимость замены + цена самого модуля:<br><span style="color: red;">1500</span> грн.</h5>
-                    <h5 class="font-weight-normal text_mod1">Стоимость замены предохранителя на плате:<br><span style="color: green;">500</span> грн.</h5>
-                </div>
-            </div>
-		</div>
-	</section> -->
-
-
-	<!-- ------------------------------Восстановление на компонентном уровне------------------------------ -->
-
-	<!-- <section class="section_mod">
-		<div class="container-xl w-100">
-			<h2 align="center" style="padding-bottom: 30px;">Восстановление на компонентном уровне</h2>
-			<h5 class="font-weight-normal text_mod">Нашей отличительной чертой является услуга восстановления Вашей техники на компонентном уровне. В то время, как другие службы, не заморачиваясь, предложат Вам заменить вышедший из строя компонент на дорогостоящий новый или на другой, с неизвестной историей, наши мастера предложат Вам осуществить ремонт Вашего компонента (там где это возможно), тем самым сохранив Ваш бюджет.</h5><br>
-			<h5 align="center">К примеру:</h5><br>
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <div class="row">
-                <div class="col-md-6 col-xs-12">
-					<dir class="row">
-						<div class="col-6">
-							<img src="img/ex21.png" alt="" class="w-100"><br>
-						</div>
-						<div class="col-6">
-							<img src="img/ex22.png" alt="" class="w-75"><br>
-							<img src="img/ex23.png" alt="" class="w-75"><br>
-							<img src="img/ex24.png" alt="" class="w-75">
-						</div>
-					</dir>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <h5 class="font-weight-normal text_mod1">Ряд производителей стиральных машин, защищают электронные блоки своих устройств от влаги, насекомых и других внешних факторов, заливая их специальным лаком, гелем или компаундом. Такая защита достаточно эффективна, но практически исключает ремонт данных блоков на компонентном уровне, который позволил бы сэкономить средства клиента. Но, благодаря большому опыту, мы нашли решение этой проблемы.<br><br>На фото Вы можете видеть модуль стиральной машинки LG, который нам удалось реанимировать в короткие сроки и со значительной экономией средств клиента. Нам удалось добраться к неисправным компонентам и заменить их, устраняя множество холодных паек, не извлекая сам блок из залитого корпуса. Само извлечение практически не возможно сделать без повреждения блока. На это, с нашей точки зрения, и нацелены производители, заинтересованные в их продаже.</h5><br>
-                    <h5 class="font-weight-normal text_mod1">Клиенту удалось сэкономить около <span style="color: green;">1200</span> грн.</h5>
-                </div>
-            </div>
-			    </div>
-			    <div class="carousel-item">
-			      <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <dir class="row">
-						<div class="col-6">
-							<img src="img/ex31.png" alt="" class="w-100"><br>
-							<img src="img/ex32.png" alt="" class="w-100">
-						</div>
-						<div class="col-6">
-							
-							<img src="img/ex33.png" alt="" class="w-100"><br>
-							<img src="img/ex34.png" alt="" class="w-100">
-						</div>
-					</dir>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <h5 class="font-weight-normal text_mod1">В некоторых моделях стиральных машин с неразборными баками периодически возникает необходимость заменить подшипники или крестовину, которая выполнена из легкого сплава и разрушается со временем от воздействия воды и порошка. К сожалению, в данных моделях, крестовина является неотъемлемой частью барабана и заказывается в сборе, что довольно затратно и не всегда целесообразно. В добавок ко всему, замене препятствует две, спаянные на заводе производителя, половины бака. Решение данной проблемы, хоть и потребовало у нас больше времени и усилий, но помогло значительно сэкономить нашему клиенту. На фото Вы можете видеть аккуратно распиленный бак и заново изготовленную из нержавеющей стали крестовину.</h5><br>
-                    <h5 class="font-weight-normal text_mod1">Клиенту удалось сэкономить около <span style="color: green;">1600</span> грн.</h5>
-                </div>
-            </div>
-			    </div>
-				<div class="carousel-item">
-					<div class="row">
-				  <div class="col-md-6 col-xs-12">
-							  <center><img src="img/ex4.png" alt="" class="w-75"></center><br>
-				  </div>
-				  <div class="col-md-6 col-xs-12">
-					  <h5 class="font-weight-normal text_mod1">Распространённой проблемой в холодильниках является внутренняя утечка в запененой части. Если её не решить, заправка холодильника фрионом становиться бессмысленной и холодильник перестаёт выполнять свои функции. Для решения этой проблемы очень важно найти место утечки и устранить её, что довольно не просто, когда трубы проходят внутри корпуса. На фото видно локальное вскрытие запененой части трубопровода.</h5><br>
-					  <h5 class="font-weight-normal text_mod1">В данном случае, если бы не <span style="color: green;">ремонт</span>, клиенту пришлось бы <span style="color: red;">покупать новый холодильник</span>.</h5>
-				  </div>
-			  </div>
-				  </div>
-				  <div class="carousel-item">
-					<div class="row">
-				  <div class="col-md-6 col-xs-12">
-							  <center><img src="img/ex5.png" alt="" class="w-75"></center><br>
-				  </div>
-				  <div class="col-md-6 col-xs-12">
-					  <h5 class="font-weight-normal text_mod1">В холодильниках есть очень своеобразные по своей конструкции вентиляторы. Когда они выходят из строя, не всегда лучшим решением будет их замена. Вентиляторы можно отремонтировать на компонентном уровне, что позволит сэкономить клиенту деньги и выполнить ремонт в кратчайшие сроки. В ином случае, порой, запчасть можно ожидать около месяца, если она едет из-за границы. На фото показан разобранный вентилятор с компонентами радиоэлектроники, которые выходят из строя при эксплуатации и поддаются замене.</h5><br>
-					  <h5 class="font-weight-normal text_mod1">Клиенту удалось сэкономить около <span style="color: green;">800</span> грн.</h5>
-				  </div>
-			  </div>
-				  </div>
-			  </div>
-			  <br>
-			  <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 carousel_prev">
-				  <center><a class="left carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
-				    <span class="icon-prev" aria-hidden="true"></span>
-				    <span class="sr-only"><button type="button" class="btn btn-outline-primary btn-lg">Предыдущий пример</button></span>
-				  </a></center>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 carousel_next">
-				  <center><a class="right carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
-				    <span class="icon-next" aria-hidden="true"></span>
-				    <span class="sr-only"><button type="button" class="btn btn-outline-primary btn-lg">Следующий пример</button></span>
-				  </a></center>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- ------------------------------Распространённые поломки и их причины:------------------------------ -->
-
-	<!-- <section style="box-shadow: 0 0 10px rgba(0,0,0,0.5);" class="section_mod">
-		<div class="container-xl w-100">
-			<h2 align="center" style="padding-bottom: 30px;">Распространённые поломки и их причины:</h2>
-			<div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <ul class="list-unstyled">
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    cтиральная машина не включается;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Причин этому может быть очень много:<br>
-									- выход из строя сетевого фильтра;<br>
-									- поломка блока управления;<br>
-									- проблемы с электропроводкой или розеткой и многие другие.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    произвольно мигают индикаторы;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Вероятной причиной этого, может являться поломка платы управления.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    не работает нагрев воды;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Основными причинами могут быть: перегорание ТЭНа, поломка датчика температуры или выход из строя регулятора температуры. Выход из строя нагревательного элемента (перегорание клеммы), является серьезной неисправностью. Такая поломка требует обязательного ремонта.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    не вращается барабан;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Причиной может быть обрыв ременя барабанного привода, выход из строя двигателя, либо неисправность в проводах питания двигателя.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    cтиральная машина выбивает автомат электросети;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Причиной этому может быть поломка фильтра сети, поломка нагревателя, либо замыкание двигателя.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <ul class="list-unstyled">
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    cтиральная машина течёт;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Основной причиной принято считать нарушение герметичности разных узлов стиральной машины: повреждение патрубка или барабана стиральной машины, прорыв манжеты.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    не набирается вода;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Причина может быть в засоре сетки фильтра, расположенного на клапане залива воды или поломке блока управления. К тому же, каждый раз перед запуском машинки, стоит убедится, что водопроводный кран открыт и ничто не препятствует подаче воды.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    отсутствует отжим;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Для начала нужно проверить, не был ли случайно включён режим «отключение отжима». Если нет, то причина может быть в неисправном таходатчике.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    отсутствует слив воды;</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								    Главной причиной принято считать поломку сливного насоса. Но, кроме того, причинами могут быть засор сливного фильтра, поломка помпы или механизма её управления, обрыв в цепи питания.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    	<li class="checklist">
-                    		<div class="dropdown">
-                    			
-							  <a class="btn btn-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-							    <h5 class="font-weight-normal text-left"><img src="img/sort-down.png" class="checkImage float-left">
-							    шумит и сильно вибрирует при работе.</h5>
-							  </a>
-
-							  <div class="dropdown-menu p-4 text-muted" style="max-width: 450px;">
-								  <p>
-								  	Если исключить неравномерное распределение белья во время стирки, то такое случается, когда в барабан попадают посторонние предметы или подшипники стиральной машины приходят в негодность.
-								  </p>
-								  <p class="mb-0">
-								    Для точного определения причины необходимо провести профессиональную диагностику.
-								  </p>
-							  </div>
-							</div>
-                    	</li>
-                    </ul>
-                </div>
-            </div>
-		</div>
-	</section> -->
-
-	<!-- ------------------------------Бренды ремонтируемой техники------------------------------ -->
+									<!-- Бренды используемой техники -->
 
 	<!-- <section class="h-100 section_mod" style="margin-right: 0;">
 		<div class="container-xl">
-			<h2 align="center" style="padding-bottom: 30px;">Ремонтируем технику всех производителей, включая:</h2>
+			<h2 align="center" style="padding-bottom: 30px;">Используем технику всех производителей, включая:</h2>
 
 
 			<div align="center" id="carouselExampleDark" class="carousel carousel-dark slide" data-ride="carousel">
@@ -940,477 +265,10 @@
 			</div>
 	</section> -->
 
-	<!-- ------------------------------Как мы работаем------------------------------ -->
+										<!-- Футер -->
 
-	<!-- <section style="background-color: #007b9c; background-image: linear-gradient(to right top, #283c86, #005fa3, #007b9c, #009177, #45a247); background-attachment: local; background-size: auto 100%;" class="section_mod">
-		<div class="container-xl">
-			<h2 align="center" class="whitetext" style="padding-bottom: 30px;">Как воспользоваться нашими услугами?</h2>
-			<div class="row">
-		    	<div class="col-md-3 col-xs-12 text-center">
-					<div class="howtogetservicecard">
-		    			<img src="img/fluent1.webp" alt="4 seasons tech" width="100px"><br><br>
-		    			<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Вы можете оставить заявку, заполнив форму на сайте, или связаться с нами, позвонив по указанному номеру телефона.</p>
-					</div>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center">
-					<div class="howtogetservicecard">
-		    			<img src="img/fluent2.webp" alt="4 seasons tech" width="100px"><br><br>
-		    			<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Получив от Вас необходимую информацию, мы договариваемся о времени визита мастера.</p>
-					</div>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center">
-					<div class="howtogetservicecard">
-		    			<img src="img/fluent3.webp" alt="4 seasons tech" width="100px"><br><br>
-		    			<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">Мастер выезжает к Вам в оговоренное время и осуществляет необходимый комплекс работ.</p>
-					</div>
-		    	</div>
-		    	<div class="col-md-3 col-xs-12 text-center">
-					<div class="howtogetservicecard">
-		    			<img src="img/fluent4.webp" alt="4 seasons tech" width="100px"><br><br>
-		    			<p class="darkgreytext font-weight-normal text-justify howtogetservicetext">По окончанию, Вы принимаете работу, получаете от мастера гарантию и оплачиваете его услуги любым удобным Вам способом.</p>
-					</div>
-		    	</div>
-		  	</div>
-		</div>
-	</section> -->
-
-
-	<!-- ------------------------------ЧаВо------------------------------ -->
-
-	<!-- <section class="darkbluetext section_mod" style="box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-		<a href="#" name="q&a"></a>
-		<div class="container-xl w-100">
-			<h2 align="center" style="padding-bottom: 30px;">Часто задаваемые вопросы</h2>
-			<div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="accordion" id="accordion1">
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingOne1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-					          <h5>Какая информация нам нужна для оформления заявки?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer">
-					        	- название техники;<br>
-								- её возраст;<br>
-								- детальное описание возникшей проблемы, чтобы понять причину её возникновения;<br>
-								- не вскрывалась ли техника до нашего мастера другими мастерами или самим клиентом;<br>
-								- какие проблемы были с техникой ранее, была ли она в ремонте и какие детали были заменены;<br>
-								- не производились ли какие-либо манипуляции с электрической сетью, делался ли в квартире ремонт, перемещалась ли техника (часто возникшие с техникой проблемы бывают связанны с внешними факторами);<br>
-								- место нахождения клиента;<br>
-								- когда клиент сможет выделить время для визита к нему мастера.
-							</p>
-					      </div>
-					    </div>
-					  </div>
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingTwo1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-					          <h5>Как оформить заявку онлайн?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Для оформления заявки Вам необходимо заполнить форму обратной связи, расположенную сразу при входе на сайт или всплывающую после нажатия на одну из кнопок "Заказать звонок" в правом верхнем или правом нижнем углу сайта. В форме Вам нужно указать своё имя, номер телефона без разделительных знаков, местоположение (точный адрес или как минимум район города) и кратко описать проблему согласно ответу на предыдущий вопрос, после чего нажать кнопку “Перезвоните мне” и ожидать звонка менеджера.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingThree1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-					          <h5>Как быстро мастер готов приехать?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Если есть свободные мастера или находящиеся в Вашем районе, то визит возможен в этот же день. Если нет, то на следующий день или в, заранее оговорённые, удобные Вам, день и время.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingFour1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour1" aria-expanded="true" aria-controls="collapseFour1">
-					          <h5>Платная ли диагностика?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseFour1" class="collapse" aria-labelledby="headingFour1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Если после диагностики технику было решено ремонтировать, то диагностика бесплатна, если же нет - диагностика оплачивается.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingFive1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive1" aria-expanded="false" aria-controls="collapseFive1">
-					          <h5>Сколько будет стоить ремонт?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseFive1" class="collapse" aria-labelledby="headingFive1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Сформировать полную стоимоть ремонта, с учётом объема роботы и необходимых запчастей, возможно только после полной диагностики, во время первого визита мастера.</p>
-					      </div>
-					    </div>
-					  </div>
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingSix1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix1" aria-expanded="false" aria-controls="collapseSix1">
-					          <h5>Ремонт техники осуществляется на дому или в сервис центре?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseSix1" class="collapse" aria-labelledby="headingSix1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">95% проблем удаётся устранить на дому, но иногда необходимо специальное не мобильное оборудование и тогда приходится забирать технику или вышедший из строя блок в сервис центр.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingSeven1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven1" aria-expanded="false" aria-controls="collapseSeven1">
-					          <h5>Как происходит ремонт?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseSeven1" class="collapse" aria-labelledby="headingSeven1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer">По приезду на объект наш мастер:<br><br>
-					        - опрашивает Вас о сути проблемы и о том, при каких обстоятельствах она возникла;<br>
-							- проводит визуалиный осмотр техники;<br>
-							- если позволяет проблема, включает технику перед разборкой и проверяет её роботоспособность, чтобы самому увидеть возникшее нарушение в работе устройства;<br>
-							- производит разборку техники;<br>
-							- показывает Вам в чём причина данной неисправности или проблемы (иногда причина может быть следствием неисправности других узлов);<br>
-							- формирует полную стоимоть ремонта с учётом объёма роботы и необходимых запчастей;<br>
-							- производит замену неисправных запчастей;<br>
-							- проверяет технику и показывает Вам результат работы;<br>
-							- озвучивает всевозможные рекомендации по эксплуатации и обслуживанию данной техники, во избежание возникновения неисправностей в дальнейшем. Советует средства по уходу и профилактике;<br>
-							- озвучивает гарантийные обязательства и сроки на проделанную работу и заменённые детали;<br>
-							- получает от Вас оплату за проделанную работу.</p>
-					      </div>
-					    </div>
-					  </div>
-
-					 
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingEight1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseEight1" aria-expanded="true" aria-controls="collapseEight1">
-					          <h5>Даётся ли гарантия?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseEight1" class="collapse" aria-labelledby="headingEight1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Да, но только на конкретные проведённые работы, неисправности, которые были устранены нашим мастером, и на запчасти, которые были заменены.</p>
-					      </div>
-					    </div>
-					  </div>
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingNine1">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseNine1" aria-expanded="true" aria-controls="collapseNine1">
-					          <h5>Какие запчасти используются при ремонте?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseNine1" class="collapse" aria-labelledby="headingNine1" data-parent="#accordion1">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Рассматриваем любые удобные клиенту варианты: оригинальные детали под заказ, качественные детали от альтернативных производителей, иногда б/у, если это не отразится на качестве работы и при этом удешевит ремонт, но только по согласованию с клиентом.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					</div>
-                </div>
-
-                <div class="col-md-6 col-xs-12">
-                    <div class="accordion" id="accordion2">
-					  
-
-					
-						<div class="card">
-							<div class="card-header cardhover" id="headingTen1">
-							  <h2 class="mb-0">
-								<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTen1" aria-expanded="true" aria-controls="collapseTen1">
-								 <h5>Восстанавливаем ли мы электронику и другие компоненты или только заменяем нерабочий блок целиком?</h5>
-								</button>
-							  </h2>
-							</div>
-	
-							<div id="collapseTen1" class="collapse" aria-labelledby="headingTen1" data-parent="#accordion1">
-							  <div class="card-body text-muted">
-								<p class="answer text_mod">Если позволяет специфика поломки, то возможен ремонт на компонентном уровне, что позволяет сэкономить время и средства.</p>
-							  </div>
-							</div>
-						</div>
-						
-
-                      <div class="card">
-					    <div class="card-header cardhover" id="headingOne2">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-					         <h5>Что означают непонятные символы на экране техники или моргание светодиодов?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordion2">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Обычно это сигнализация кода неисправности. Важно зафиксировать то, что отображается на экране, какие светодиоды горят, какие моргают, иногда важен их цвет и количество вспышек или звуковых сигналов. Также могут загораться специальные символы типа сервисного ключа. Эта информация позволит мастеру более точно определить причину неисправности.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingTwo2">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
-					          <h5>Что нужно для профилактики неисправностей, какое необходимо обслуживание?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Правильная эксплуатация согласно инструкции пользователя, периодический осмотр мастером, регулярная чистка с использованием специальной техники и средств.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingThree2">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="true" aria-controls="collapseThree2">
-					          <h5>Производим ли мы обслуживание робочей техники, чтобы упредить её поломку?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2" data-parent="#accordion2">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Да. В спектр услуг входят: визуальный осмотр с разборкой (при необходимости), диагностика систем, чистка, регулировка, заправка фреоном, обработка чистящими средствами.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingFour2">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour2" aria-expanded="true" aria-controls="collapseFour2">
-					          <h5>Сколько еще проживёт моя техника?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseFour2" class="collapse" aria-labelledby="headingFour2" data-parent="#accordion2">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">На этот вопрос нет точного ответа, но наши мастера, благодаря многолетнему опыту работы в данной сфере, в процесе диагностики могут спрогнозировать это исходя из её состояния, эусплуатационных условий и нагрузок. А также предложить комлекс мер по увеличению срока службы Вашей техники.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingFive2">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive2" aria-expanded="true" aria-controls="collapseFive2">
-					          <h5>Утилизируем и выкупаем ли мы технику, которую не целесообразно ремонтировать?</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseFive2" class="collapse" aria-labelledby="headingFive2" data-parent="#accordion2">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Да, но только после визуального осмотра и договоренности обеих сторон.</p>
-					      </div>
-					    </div>
-					  </div>
-
-
-					  <div class="card">
-					    <div class="card-header cardhover" id="headingSix2">
-					      <h2 class="mb-0">
-					        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSix2" aria-expanded="true" aria-controls="collapseSix2">
-					          <h5>Продаём ли мы технику б/у</h5>
-					        </button>
-					      </h2>
-					    </div>
-
-					    <div id="collapseSix2" class="collapse" aria-labelledby="headingSix2" data-parent="#accordion2">
-					      <div class="card-body text-muted">
-					        <p class="answer text_mod">Да. Больше актуальной информации можно узнать связавшись с нами по телефону или распросить у нашего мастера.</p>
-					      </div>
-					    </div>
-					  </div>
-
-					</div>
-                </div>
-            </div>
-		</div>
-	</section> -->
-
-	<!-- ------------------------------О нас------------------------------ -->
-
-	<!-- <section style="background-color: #007b9c; background-image: linear-gradient(to right top, #283c86, #005fa3, #007b9c, #009177, #45a247); background-attachment: local; background-size: auto 100%;" class="greytext">
-		<div class="container-xl w-75">
-			<h2 align="center">О нас</h2><br>
-			<h5 class="font-weight-light text_mod">Специалисты нашего сервиса уже около 20 лет предоставляют качественные услуги по монтажу, ремонту и обслуживанию систем вентиляции и кондиционирования в городе Днепр. Оперативно реагируя на Ваши вызовы, наши специалисты, каждый день успешно борются с проблемами любой сложности, гарантируя качество выполняемых работ.</h5>
-			<h5 class="font-weight-light text_mod">Мы бережно относимся к бюджету наших клиентов! Благодаря адекватной политике ценообразования, прозрачному расчёту стоимости услуг и многолетнему опыту, мы всегда готовы предложить нашим клиентам наименее обременительные решения. Наш сервис использует только качественные и проверенные временем инструменты и комплектующие, а на выполненные работы предоставляет гарантию качества подтверждаемую соответствующим документом.</h5>
-			<h5 class="font-weight-light text_mod">Благодаря своей репутации мы успешно сотрудничаем со многими строительными компаниями, проектными и дизайнерскими агентствами, прорабами, подрядчиками, частными организациями и физическими лицами. Мы те, кому уже сотни людей доверили заботится об их комфорте и здравии, обечпечивая доступность прохладного чистого воздуха!</h5>
-		</div>
-	</section> -->
-
-	<!-- ------------------------------Видео-отзывы наших клиентов------------------------------ -->
-
-	<!-- <section>
-		<div class="container-xl">
-			<h2 align="center">Видео-отзывы наших клиентов</h2><br>
-			<div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <iframe class="w-100" width="853" height="480" src="https://www.youtube.com/embed/i6kNaWNfflI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <iframe class="w-100" width="853" height="480" src="https://www.youtube.com/embed/6Sxq8sbg7d0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-4 col-xs-12">
-                    <iframe class="w-100" width="853" height="480" src="https://www.youtube.com/embed/zgVVsjrHIk0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-		</div>
-	</section> -->
-
-	<!-- ------------------------------Отзывы наших клиентов------------------------------ -->
-
-	<!-- <section style="box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-		<a href="#" name="comments"></a>
-		<div class="container-xl">
-			<h2 align="center">Отзывы наших клиентов</h2><br> -->
-
-
-			<!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-		    	<div class="col">
-					<div class="card mx-auto d-block" style="width: 18rem;">
-					  <img src="img/feedbacks/c1.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Анастасия</h5>
-					    <p class="card-text">Во время стирки потекла машинка. Это был кошмар! Я не знала что делать. Я судорожно нашла в интернете первый попавшися сайт и набрала телефонный номер сервиса! Там меня успокоили, сказали что нужно сделать и приняли заявку. Мастер приехал на удивление быстро, устранил проблему и объяснил что нужно делать, чтобы такого впредь не случалось. Спасибо Вам большое!</p>
-					  </div>
-					</div>			
-		    	</div>
-		    	<div class="col">
-					<div class="card mx-auto d-block" style="width: 18rem;">
-					  <img src="img/feedbacks/c3.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Нина </h5>
-					    <p class="card-text">"Жара как всегда началась внезапно. И на помощь пришел мой старенький кондиционер, но включая его появлялся неприятный запах сырости и плесени. Ясное дело что лезть в сложную электронику я не стала. Пожаловалась соседке на свою проблему и она посоветовала ребят, которые чистили ей кондиционер в этом году. Оставила заявку на сайте,со мной быстро связались и уже на следующий день в удобное мне время приехали на чистку. Т.к. я пенсионерка и бюджет ограничен. выбрала первый пакет, очень довольна, все сделали быстро. Неприятный запах пропал и даже вроде кашлять меньше стала! Спасибо большое ребятам!"</p>
-					  </div>
-					</div>			
-		    	</div>
-		    	<div class="col">
-					<div class="card mx-auto d-block" style="width: 18rem;">
-					  <img src="img/feedbacks/c2.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Николай</h5>
-					    <p class="card-text">Стиральная машина перестала включаться. Вызвал мастера, он посмотрел и сказал что проблема с блоком управления. Я уже думал что остался без машинки, откуда столько денег взять на новый блок то. Но мастер успокоил сказал что это можно починить. Что-то там начал паять. Не прошло и часа как машинка была снова в строю. И я обошёлся малой кровью. Спасибо за помощь!</p>
-					  </div>
-					</div>			
-		    	</div>
-		  	</div> -->
-
-			  <!-- <div class="card mb-3" style="max-width: 80%; border: 2px solid #009177; margin-left: auto; margin-right: auto;">
-				<div class="row g-0">
-				  <div class="col-md-4">
-					<center><img src="img/feedbacks/c1.webp"  alt="4 seasons tech" style="width: 150px; border-radius: 50%; margin-top:10px;"></center>
-				  </div>
-				  <div class="col-md-8">
-					<div class="card-body">
-					  <h5 class="card-title comment">Анастасия Панина</h5>
-					  <p class="card-text comment"><small class="text-muted">14.06.2020</small></p>
-					  
-					  <p class="card-text" style="text-indent:40px; text-align: justify; background-color: #DCF9D7; padding: 10px; border-radius: 20px;">«Период появления тополиного пуха - это какой-то ад! Жара плюс аллергия. Окна особо не откроешь, пух постоянно залетает в квартиру. Спасалась обычно кондиционером и, вцелом, дома мне всегда было легче. Но в этом году заметила странность, вроде всё делала как обычно, но даже дома стала мучать аллергия. Загуглила в чём может быть дело и узнала что причина может быть в фильтрах кондиционера, которые забиваются пылью, пухом и прочим, если не проводить регулярную чистку. Думала что это мне влетит в копеечку, но что поделать, стала искать, кто бы это мог сделать и растерялась. Сервисов много, но кого выбрать не понятно. И вдруг в инстаграме мне попалась реклама данного сервиса. Я полистала сайт и решила свзяаться с ними, мне понравилось что всё понятно расписано, ещё и моя ситуация есть в примере. Поговорила с приятным оператором, который всё объяснил и сделала заказ. На следующий день приехал мастер и всё быстро и аккуратно сделал. Каков был мой ужас, когда он показал мне степень загрязнения, не удивительно что я стала плохо себя чувствовать. Но теперь всё как прежде и я могу свободно дышать дома. Спасибо сервису и мастеру, не знаю как без вас пережила бы лето!)»</p>
-					  
-					</div>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="card mb-3" style="max-width: 80%; border: 2px solid #009177; margin-left: auto; margin-right: auto;">
-				<div class="row g-0">
-				  <div class="col-md-4">
-					<center><img src="img/feedbacks/c3.webp"  alt="4 seasons tech" style="width: 150px; border-radius: 50%; margin-top:10px;"></center>
-				  </div>
-				  <div class="col-md-8">
-					<div class="card-body">
-					  <h5 class="card-title comment">Нина Бровко</h5>
-					  <p class="card-text comment"><small class="text-muted">23.05.2020</small></p>
-					  <p class="card-text" style="text-indent:40px; text-align: justify; background-color: #DCF9D7; padding: 10px; border-radius: 20px;">«Жара как обычно началась внезапно. Даже и не знаю чтобы делала без моего старенького кондиционера, но я стала замечать, что во время его работы стал появляться неприятный запах сырости и плесени. А когда это стали замечать и другие, я поняла что нужно что-то делать, но что именно у меня ни малейшего представления не было. Лезть туда сама я побоялась, да и возвраст не тот уже. Пожаловалась как-то соседке на свою проблему, а она посоветовала ребят, которые чистили ей кондиционер весной. Оставила заявку на сайте, вскоре мне перезвонили, я рассказала о своей проблеме и уже на следующий день ко мне приехали ребята и всё почистили. Очень довольна их работой! Неприятный запах пропал и даже вроде дышать как-то легче стало! Большое Вам спасибо!»</p>
-					  
-					</div>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="card mb-3" style="max-width: 80%; border: 2px solid #009177; margin-left: auto; margin-right: auto;">
-				<div class="row g-0">
-				  <div class="col-md-4">
-					<center><img src="img/feedbacks/c2.webp"  alt="4 seasons tech" style="width: 150px; border-radius: 50%; margin-top:10px;"></center>
-				  </div>
-				  <div class="col-md-8">
-					<div class="card-body">
-					  <h5 class="card-title comment">Николай Карташов</h5>
-					  <p class="card-text comment"><small class="text-muted">17.05.2020</small></p>
-					  <p class="card-text" style="text-indent:40px; text-align: justify; background-color: #DCF9D7; padding: 10px; border-radius: 20px;">«Регулярно обращаюсь в этот сервис для чистки кондиционеров в наших офисах. Работы конечно много и непростая, но мастера всё делают чётко, быстро и качественно. Ещё ни разу не пожалел! Рекомендую!»</p>
-					  
-					</div>
-				  </div>
-				</div>
-			  </div>
-
-		</div>
-	</section> -->
-
-	<!-- ------------------------------Футер------------------------------ -->
-
-		<footer class="page-footer font-small pt-4" style="background-color: #007b9c; background-image: linear-gradient(to right top, #283c86, #005fa3, #007b9c, #009177, #45a247); background-attachment: local; background-size: auto 100%;">
-
+		<footer class="page-footer font-small pt-4" style="background-color: #111212; background-image: url(img/texture.png); background-attachment: local; background-size: cover">
+		<a href="#" name="contacts"></a>
 		  
 		  <div class="container-xl text-center text-md-left">
 
@@ -1420,7 +278,7 @@
 		      
 		      <div class="col-md-3 mt-md-0 mt-3">
 
-		        <img src="img/4ss-white.webp" width="200px" alt="4 seasons tech" class="brand_image_mod"><br><br>
+		        <img src="img/4ss-white.webp" width="200px" alt="4 Seasons Tech" class="brand_image_mod"><br><br>
 		        
 		        <!-- <p style="color:#CDCDC0">(097) 000 00 00&nbsp;&nbsp;&nbsp;&nbsp;(093) 000 00 00&nbsp;&nbsp;&nbsp;&nbsp;(099) 000 00 00<br>Время работы мастеров: с 8:00 до 21:00<br>Заявки принимаются круглосуточно, без выходных.</p> -->
 
@@ -1432,7 +290,7 @@
 		      
 		      <div class="col-md-4 mb-md-0 mb-3">
 
-				<h5 style="color:white">Полный спектр услуг<br>в сфере кондиционирования<br>в Днепре</h5>
+				<h5 style="color:white">Полный спектр услуг<br>в сферах вентиляции,<br>кондиционирования<br>и отопления</h5>
 				<p style="color:#ffffff; margin-bottom: 0px;">По вопросам сотрудничества обращайтесь:<br>support@4seasons.tech</p>
 				<!-- <a href="privacypolicy.html">Политика конфиденциальности</a> -->
 
@@ -1466,7 +324,7 @@
 		      
 		      <div class="col-md-3 mb-md-0 mb-3">
 		        
-		        <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
+		        <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Связаться с нами</button>
 
 		      </div>
 		      
@@ -1480,7 +338,9 @@
 		  
 
 		  <!-- Copyright -->
-		  <div class="footer-copyright text-center py-3 mobile_font-size" style="background-color: #f5f4f4; color:#212529; box-shadow: 0 0 10px rgba(0,0,0,0.5);">© 2021 Copyright:
+		  <div class="footer-copyright text-center py-3 mobile_font-size" style="background-color: #000; color:#dedfdf; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+			<span style="color:#3b3b3b">Designed by Roman Lobodych</span><br>
+			© 2021 Copyright:
 		    <a href="index.html" class="footer-ahref">4 Seasons Tech</a>
 		  </div>
 		  <!-- Copyright -->
