@@ -481,12 +481,58 @@ li.nav-item:hover {
   margin-top: 12%;
 }
 
+.title_section_height {
+  height: 300px;
+}
+
+.title_text_size {
+  font-size: 4rem;
+}
+
+.img_padding {
+  padding: 10px;
+}
+
+/* Галерея */
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+/* .img_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.img_container img {
+  /* width: 300px; */
+  /* padding: 10px; */
+  transition: 0.5s;
+}
+
+.img_container img:hover {
+  transform: scale(1.1);
+}
+
 /*  */
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url("../images/video.jpg") center center / cover no-repeat;
+    background: url("../img/city_bg_image.jpg") center center / cover no-repeat;
+    padding-top: 58%;
   }
   .fullscreen-bg__video {
     display: none;
+  }
+
+  .title_section_height {
+    height: fit-content;
+  }
+
+  .title_text_size {
+    font-size: 3rem;
+  }
+
+  .overlay h1 {
+    font-size: 30px;
   }
 }

@@ -23,11 +23,6 @@ if(isset($_POST['user_phone']) && !empty($_POST['user_phone'])){
 } else {
 	header( 'Location: error.html', true, 301 );
 }
-if(isset($_POST['user_address']) && !empty($_POST['user_address'])){
-     $address = $_POST['user_address'];
-} else {
-	header( 'Location: error.html', true, 301 );
-}
 if(isset($_POST['user_message']) && !empty($_POST['user_message'])){
      $message = $_POST['user_message'];
 } else {
@@ -37,7 +32,6 @@ if(isset($_POST['user_message']) && !empty($_POST['user_message'])){
 
 // $name = $_POST['user_name'];
 // $phone = $_POST['user_phone'];
-// $address = $_POST['user_address'];
 // $message = $_POST['user_message'];
 
 //в переменную $token нужно вставить токен, который нам прислал @botFather
@@ -46,14 +40,14 @@ $token = "1946333414:AAHD1ZWWcNCBa7Z1ZpG_YphYSn5Ie5cbAjc";
 //нужна вставить chat id (Как получить chat id, читайте выше)
 $chat_id = "-559253938";
 
-if (isset($name) && !empty($name) && isset($phone) && !empty($phone) && isset($address) && !empty($address) && isset($message) && !empty($message)) {
+if (isset($name) && !empty($name) && isset($phone) && !empty($phone) && isset($message) && !empty($message)) {
 
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
+  'Источник' => '4 Seasons Tech',
   'Имя клиента: ' => $name,
   'Телефон: ' => $phone,
-  'Адрес: ' => $address,
-  'Описание проблемы: ' => $message
+  'Клиента интересует: ' => $message
 );
 
 
