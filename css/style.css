@@ -475,10 +475,14 @@ li.nav-item:hover {
   z-index: 4;
 }
 .overlay h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 50px;
+  width: 80%;
+  height: auto;
+  text-align: left;
+  color: #fffc;
+  font-size: 200%;
   margin-top: 12%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .title_section_height {
@@ -517,7 +521,7 @@ li.nav-item:hover {
 /*  */
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url("../img/city_bg_image.jpg") center center / cover no-repeat;
+    background: url("../img/city_bg_image.webp") center center / cover no-repeat;
     padding-top: 58%;
   }
   .fullscreen-bg__video {
