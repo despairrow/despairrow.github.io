@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4 Seasons Tech</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="dist/css/lightbox.css">
+
+
+</head>
+<body>
+
+										<!-- Хедер 1 -->
+
+	<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #f5f4f4; background-image:url(img/texture.webp); background-attachment: local; background-size: cover; border-bottom: 4px solid black; border-image: linear-gradient(to right, #283c86, #005fa3, #007b9c, #009177, #45a247);
+			border-image-slice: 1;">
+			  <div class="container-xl">
+			  	
+
+			  	
+			    	<a class="navbar-brand header_fix" href="index.html">
+						<img src="img/4ss-white.webp" width="200px" alt="4 seasons tech" class="brand_image_mod" />
+			    	</a>
+			  	
+
+					<div class="toggle_fix">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto mb-2 mb-lg-0 center" >
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html"><h6>На главную</h6></a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="#howitworks"><h6>Как мы работаем</h6></a>
+							</li> -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  <h6>Наши работы</h6>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								  <a class="dropdown-item" href="object1.html">Квартира на Рогалёва</a>
+								  <a class="dropdown-item" href="object2.html">Квартира на Жуковского</a>
+								  <a class="dropdown-item" href="object3.html">Офис компании Solo</a>
+								  <a class="dropdown-item" href="object4.html">Нефтэк</a>
+								  <a class="dropdown-item disabled" href="object5.html">Квартира в ЖК "Cascade Plaza"</a>
+								</div>
+							  </li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="https://4seasons.tech/service/index.html"><h6>Сервис</h6></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="#"><h6>Документы</h6></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contacts"><h6>Контакты</h6></a>
+							</li> -->
+						</ul>
+					  </div>
+
+			    	<!-- <p style="color:#2F2F2F; margin-top: 1rem; font-weight: 500;" class="mobile_mod mobile_font-size">Приём заявок 24/7<br>Часы работы: с 9:00 до 20:00</p>
+			
+			   
+			    	<p style="color:#2F2F2F; margin-top: 1rem; font-weight: 500;" class="mobile_font-size number_fix"><img src="img/kyivstar.webp" alt="Номер телефона Киевстар" width="18px"> (098) 784 94 04<br><img src="img/vodafone.webp" alt="Номер телефона Vodafone" width="18px"> (099) 091 86 06<br><img src="img/lifecell.webp" alt="Номер телефона Lifecell" width="18px"> (063) 951 81 98</p> -->
+
+
+					<!-- <div class="button_fix">
+			    		<button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
+					</div> -->
+
+			  </div>
+			 
+			</nav>
+	</header>
+
+
+										<!-- Окно формы заявки -->
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	    
+	      <div class="modal-body">
+	        <div class="row" style="padding: 10px;">
+						   <!-- <h5 style="color: #211F30;" align="center">Для связи с нами заполните форму</h5><br><br> -->
+						   <form action="./form.php" method="post">
+								<div class="form-group">
+								   <label for="name" style="color: #211F30;" class="form-label h6">Ваше имя:</label>
+								   <input type="name" name="user_name" class="form-control" id="name" placeholder="" data-toggle="tooltip" data-placement="left" title="Введите Ваше имя" required>
+								</div>
+								<div class="form-group">
+								   <label for="phone" style="color: #211F30;" class="form-label h6">Номер телефона:</label>
+								   <input type="phone" name="user_phone" class="form-control" id="phone" placeholder="" pattern="[0-9]{10,}" data-toggle="tooltip" data-placement="left" title="Введите Ваш номер без разделительных знаков. К примеру: 0961112233" required>
+								</div>
+								<div class="form-group">
+								   <label for="message" style="color: #211F30;" class="form-label h6">Чем мы можем Вам помочь?</label>
+								   <textarea class="form-control" name="user_message" rows="4" id="message" placeholder="" data-toggle="tooltip" data-placement="left" title="Вкратце напишите что именно вас интересует." required></textarea>
+								</div><br>
+								   <button type="submit" class="btn btn-outline-success w-100">Перезвоните мне</button>
+							</form>
+			</div>
+	      </div>
+	  
+	    </div>
+	  </div>
+	</div>
+
+
+										<!-- Первый экран -->
+
+	<section class="container-fluid title_section_height" style="padding:0px; box-shadow: 0 0 10px rgba(0,0,0,0.5); background-image: url(img/o5cover.jpg); background-color: #211F30; background-repeat: no-repeat; background-attachment: local; background-size: cover; display:flex; align-items: center; justify-content: center;">
+
+		<div style="background: rgba(255, 255, 255, 0.5); width: 100%; height: 100%; z-index: 4;"> 
+			<h1 style="color:#111212; margin: 110px 0; text-align: center;" class="title_text_size">Квартира в ЖК "Cascade Plaza"</h1>
+		</div>
+		
+
+	</section>
+
+	<section style="background-color: #111212; background-image: url(img/texture.webp); background-attachment: local; background-size: cover; border-top: 4px solid black; border-image: linear-gradient(to right, #283c86, #005fa3, #007b9c, #009177, #45a247); border-image-slice: 1;"  class="greytext">
+			<div class="container-xl" style="width:90%;">
+				<!-- <h2 align="center">Заголовок</h2><br> -->
+				<div class="row">
+					<div class="col-md-8 col-xs-12">
+						<h5 class="font-weight-light text_mod img_padding">«Основной особенностью работ на данном объекте, была необходимость сохранения целостности дизайна интерьера, при полной реализации, необходимого для повседневной жизни клиента, функционала.<br><br>Кондиционирование скрытого канального типа позволило гармонично вписать его в интерьер, как и оборудование для обеспечения чистого свежего воздуха. Последнее пренадлежало европейскому производителю, продукция которого отличается сочетанием в себе высокого качества и конкурентной цены.<br><br>Также одним из вызовов стало скрытое подключение к системе вентиляции вытяжки, встроенной в варочную поверхность Elica NIKOLATESLA. Благодаря успешному проведению работ, в объекте удалось совместить стильный дизайн с высоким уровнем качества жизни.»
+						</h5>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="img_container">
+							<a href="img/o5i1.jpg" data-lightbox="test">
+								<img src="img/o5i1.jpg" alt="no-image" class="w-100 img_padding">
+							</a>
+						</div>
+						<div class="img_container">
+							<a href="img/o5i2.jpg" data-lightbox="test">
+								<img src="img/o5i2.jpg" alt="no-image" class="w-100 img_padding">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-8 col-xs-12">
+						<div class="img_container">
+							<a href="img/o5i3.jpg" data-lightbox="test">
+								<img src="img/o5i3.jpg" alt="no-image" class="w-100 img_padding">
+							</a>
+						</div>
+						<div class="img_container">
+							<a href="img/o5i5.jpg" data-lightbox="test">
+								<img src="img/o5i5.jpg" alt="no-image" class="w-100 img_padding">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="img_container">
+							<a href="img/o5i4.jpg" data-lightbox="test">
+								<img src="img/o5i4.jpg" alt="no-image" class="w-100 img_padding">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="row">
+					<div class="col-md-8 col-xs-12">
+						<img src="img/o2i6.jpg" alt="4 Seasons Tech" class="w-100">
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<h5 class="font-weight-light">
+
+						</h5>
+					</div>
+				</div> -->
+				
+				
+			</div>
+		</section>
+
+
+
+	<section style="background-color: #007b9c; background-image: url(img/inverted_texture.webp); background-attachment: local; background-size: cover;">
+		<div class="container-xl">
+			<div class="row">
+				<div class="col-md-8 col-xs-12">
+					<div class="img_container">
+                        <a href="img/o5i6.jpg" data-lightbox="test">
+							<img src="img/o5i6.jpg" alt="no-image" class="w-100">
+						</a>
+                    </div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h5 class="font-weight-normal m-2 mt-4">Площадь квартиры 59 м2<br><br>
+						Кондиционирование выполнено на оборудовании Daikin канального типа скрытого монтажа.<br><br>Система вентиляции с рекуперацией осуществлена на европейском оборудованием Salda.
+					</h5>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+
+										<!-- Футер -->
+
+		<footer class="page-footer font-small pt-4" style="background-color: #111212; background-image: url(img/texture.webp); background-attachment: local; background-size: cover">
+		<a href="#" name="contacts"></a>
+		  
+		  <div class="container-xl text-center text-md-left">
+
+		    
+		    <div class="row">
+
+		      
+		      <div class="col-md-3 mt-md-0 mt-3">
+
+		        <img src="img/4ss-white.webp" width="200px" alt="4 Seasons Tech" class="brand_image_mod"><br><br>
+		        
+		        <!-- <p style="color:#CDCDC0">(097) 000 00 00&nbsp;&nbsp;&nbsp;&nbsp;(093) 000 00 00&nbsp;&nbsp;&nbsp;&nbsp;(099) 000 00 00<br>Время работы мастеров: с 8:00 до 21:00<br>Заявки принимаются круглосуточно, без выходных.</p> -->
+
+		      </div>
+		      
+
+		      <!-- <hr class="clearfix w-100 d-md-none pb-3"> -->
+
+		      
+		      <div class="col-md-3 mb-md-0 mb-3">
+
+				<h5 style="color:white">Полный спектр услуг<br>в сферах вентиляции,<br>кондиционирования<br>и отопления</h5>
+
+		      </div>
+
+		      <div class="col-md-3 mb-md-0 mb-3">
+
+				<p style="color:#ffffff; margin-bottom: 20px;"><b>По вопросам сотрудничества обращайтесь:</b><br><br>cold1wind@gmail.com<br><img src="img/kyivstar.webp" alt="Номер телефона Киевстар" width="18px">(098) 784 94 04<br><img src="img/vodafone.webp" alt="Номер телефона Vodafone" width="18px">(099) 091 86 06<br><img src="img/kyivstar.webp" alt="Номер телефона Киевстар" width="18px">(097) 978 24 74</p>
+
+		      	<!-- <h5 class="text-uppercase" style="color:white"></h5>
+		        <ul class="list-unstyled">
+		          <li>
+		            <a href="index.html"></a>
+		          </li>
+		          <li>
+		            <a href="dishwashers.html"></a>
+		          </li>
+		          <li>
+		            <a href="refrigerators.html"></a>
+		          </li>
+		          <li>
+		            <a href="stovesandovens.html"></a>
+		          </li>
+		          <li>
+		            <a href="boilers.html"></a>
+		          </li>
+		        </ul> -->
+		      </div>
+		      
+
+		      
+		      <div class="col-md-3 mb-md-0 mb-3">
+		        
+		        <!-- <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#exampleModal">Связаться с нами</button> -->
+
+		      </div>
+		      
+
+		    </div>
+
+			<!-- <center><p><a href="privacypolicy.html">Политика конфиденциальности</a></p></center> -->
+		    
+
+		  </div>
+		  
+
+		  <!-- Copyright -->
+		  <div class="footer-copyright text-center py-3 mobile_font-size" style="background-color: #000; color:#dedfdf; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+			<span style="color:#3b3b3b">Designed by Roman Lobodych</span><br>
+			© 2021 Copyright:
+		    <a href="index.html" class="footer-ahref">4 Seasons Tech</a>
+		  </div>
+		  <!-- Copyright -->
+
+		</footer>
+	
+		
+
+	<!-- JS, Popper.js, and jQuery -->
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+	<!-- Скрипт галереи -->
+	<script src="dist/js/lightbox-plus-jquery.js"></script>
+	<!--  -->
+	
+</body>
+</html>
